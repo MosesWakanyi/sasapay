@@ -1,0 +1,28 @@
+{
+    "name": "mosesgathecha/sasapay",
+    "description": "Sasapay - Kenyan E-wallet platform powered by CBK",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mosesgathecha\\Sasapay\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "Moses Wakanyi",
+        "email": "mosegathecha@gmail.com"
+    }],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mosegathecha\\Sasapay\\SasapayServiceProvider"
+            ],
+            "aliases": {
+                "Sasapay": "Mosegathecha\\Sasapay\\Facades\\Sasapay"
+            }
+        }
+    }
+}
